@@ -1,0 +1,295 @@
+[ {
+  "curso" : "1ESOE",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-1",
+  "dia" : 1,
+  "hora" : 1
+}, {
+  "curso" : "2ESOH",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 1,
+  "hora" : 2
+}, {
+  "curso" : "3ESOA",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-3",
+  "dia" : 1,
+  "hora" : 2
+}, {
+  "curso" : "2ESOF",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 1,
+  "hora" : 3
+}, {
+  "curso" : "1ESOH",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-3",
+  "dia" : 1,
+  "hora" : 5
+}, {
+  "curso" : "2ESOG",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 2,
+  "hora" : 1
+}, {
+  "curso" : "4ESOB",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-3",
+  "dia" : 2,
+  "hora" : 1
+}, {
+  "curso" : "1ESOG",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 2,
+  "hora" : 2
+}, {
+  "curso" : "1ESOH",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 2,
+  "hora" : 2
+}, {
+  "curso" : "1ESOI",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 2,
+  "hora" : 2
+}, {
+  "curso" : "1BS",
+  "inicialesP" : "AAS",
+  "asignatura" : "EFI",
+  "aula" : "P-2",
+  "dia" : 2,
+  "hora" : 2
+}, {
+  "curso" : "4ESOD",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "5S",
+  "dia" : 2,
+  "hora" : 3
+}, {
+  "curso" : "1BCT",
+  "inicialesP" : "AAS",
+  "asignatura" : "EFI",
+  "aula" : "5S",
+  "dia" : 2,
+  "hora" : 5
+}, {
+  "curso" : "2ESOE",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 2,
+  "hora" : 6
+}, {
+  "curso" : "3ESOB",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-1",
+  "dia" : 3,
+  "hora" : 1
+}, {
+  "curso" : "2ESOE",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 3,
+  "hora" : 2
+}, {
+  "curso" : "1ESOD",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-3",
+  "dia" : 3,
+  "hora" : 3
+}, {
+  "curso" : "2ESOH",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 3,
+  "hora" : 3
+}, {
+  "curso" : "1ESOA",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 3,
+  "hora" : 5
+}, {
+  "curso" : "1ESOB",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 3,
+  "hora" : 5
+}, {
+  "curso" : "1ESOC",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 3,
+  "hora" : 5
+}, {
+  "curso" : "1ESOH",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-1",
+  "dia" : 3,
+  "hora" : 5
+}, {
+  "curso" : "3ESOA",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "5S",
+  "dia" : 3,
+  "hora" : 6
+}, {
+  "curso" : "1ESOA",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 4,
+  "hora" : 1
+}, {
+  "curso" : "1ESOB",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 4,
+  "hora" : 1
+}, {
+  "curso" : "1ESOC",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 4,
+  "hora" : 1
+}, {
+  "curso" : "1BS",
+  "inicialesP" : "AAS",
+  "asignatura" : "EFI",
+  "aula" : "5S",
+  "dia" : 4,
+  "hora" : 1
+}, {
+  "curso" : "1ESOG",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 4,
+  "hora" : 2
+}, {
+  "curso" : "1ESOH",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 4,
+  "hora" : 2
+}, {
+  "curso" : "1ESOI",
+  "inicialesP" : "AAS",
+  "asignatura" : "TAP",
+  "aula" : "301",
+  "dia" : 4,
+  "hora" : 2
+}, {
+  "curso" : "4ESOB",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "5S",
+  "dia" : 4,
+  "hora" : 2
+}, {
+  "curso" : "1ESOE",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-2",
+  "dia" : 4,
+  "hora" : 3
+}, {
+  "curso" : "2ESOG",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 4,
+  "hora" : 3
+}, {
+  "curso" : "2ESOF",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "414",
+  "dia" : 4,
+  "hora" : 5
+}, {
+  "curso" : "4ESOD",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-3",
+  "dia" : 4,
+  "hora" : 5
+}, {
+  "curso" : "2ESOE",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "413",
+  "dia" : 5,
+  "hora" : 1
+}, {
+  "curso" : "2ESOF",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "301",
+  "dia" : 5,
+  "hora" : 2
+}, {
+  "curso" : "2ESOG",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "416",
+  "dia" : 5,
+  "hora" : 3
+}, {
+  "curso" : "3ESOB",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "5S",
+  "dia" : 5,
+  "hora" : 5
+}, {
+  "curso" : "1BCT",
+  "inicialesP" : "AAS",
+  "asignatura" : "EFI",
+  "aula" : "P-2",
+  "dia" : 5,
+  "hora" : 6
+}, {
+  "curso" : "1ESOD",
+  "inicialesP" : "AAS",
+  "asignatura" : "EF",
+  "aula" : "P-3",
+  "dia" : 5,
+  "hora" : 7
+}, {
+  "curso" : "2ESOH",
+  "inicialesP" : "AAS",
+  "asignatura" : "TEC",
+  "aula" : "417",
+  "dia" : 5,
+  "hora" : 7
+} ]
