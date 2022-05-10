@@ -83,7 +83,7 @@ public class ParteB {
         System.out.println("----------------------------EJERCICIO A-------------------------------");
         //A
         listaHorarios.stream()
-                .filter(h -> h.getCurso().equalsIgnoreCase("1ESOA") && h.getAsignatura().equalsIgnoreCase("MUS"))
+                .filter(h -> h.getCurso().equalsIgnoreCase("1ESOA") && !h.getAsignatura().equalsIgnoreCase("MUS"))
                 .forEach(System.out::println);
 
         System.out.println("----------------------------EJERCICIO B-------------------------------");
@@ -97,14 +97,16 @@ public class ParteB {
         List<String> nueva = listaHorarios.stream()
                 .filter(h -> h.getAsignatura().equalsIgnoreCase("REL"))
                 .map(h -> h.getInicialesP())
+                .distinct()
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList());
         System.out.println(nueva);
         System.out.println("----------------------------EJERCICIO D-------------------------------");
         //D
         List<String> nueva1 = listaHorarios.stream()
-                .filter(h -> h.getInicialesP().equalsIgnoreCase("JVF"))
+                .filter(h -> h.getInicialesP().equalsIgnoreCase("JFV"))
                 .map(h -> h.getAula())
+                .distinct()
                 .collect(Collectors.toList());
           System.out.println(nueva1);
         System.out.println("----------------------------EJERCICIO E-------------------------------");

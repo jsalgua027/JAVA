@@ -140,7 +140,7 @@ public class Main {
                 System.out.println("Escribe las iniciales del profesor");
                 String eleccion = datos.nextLine();
                 ArrayList<Horario> guardadoJSO = new ArrayList<>();// array para guardar el jso
-                String idficheroJSO= eleccion+".josn";
+                String idficheroJSO= eleccion+".json";
                 for (Horario pro : listaHorarios) {
                     if (pro.getInicialesP().equals(eleccion)) {
                            guardadoJSO.add(pro);
