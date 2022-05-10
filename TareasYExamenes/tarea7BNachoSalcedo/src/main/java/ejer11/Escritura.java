@@ -38,7 +38,7 @@ public class Escritura {
       public static void escribirFicheroJSON(String nombre, List<App> datos){
         ObjectMapper mappeador = new ObjectMapper();
 
-        mappeador.configure(SerializationFeature.INDENT_OUTPUT,true);
+        mappeador.configure(SerializationFeature.INDENT_OUTPUT,true);// para darle el tipo de formato de salida (como se ve en el editor de texto)
 
         try {
             mappeador.writeValue(new File(nombre),datos);

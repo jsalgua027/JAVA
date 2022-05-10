@@ -33,8 +33,8 @@ public class App {
         this.codigo = instancias;
         this.nombre = "app"+this.codigo + RandomStringUtils.randomAlphabetic(1).toUpperCase();
         this.descripcion = descripciones[random.nextInt(descripciones.length)];
-        // creo el objeto de la interace------  te genera un numero random (random, entre valores, valores);
-        DoubleStream doubles = random.doubles(1, 100.0, 1024.0);
+        // creo el objeto de la interface------  te genera un numero random (random, entre valores, valores)el ultimo valor no lo cuenta por eso el punto uno;
+        DoubleStream doubles = random.doubles(1, 100.1, 1024.1);
         this.tamanio = doubles.max().getAsDouble();
         // creo el objeto y instancio la variable
         IntStream ints = random.ints(1, 0, 50000);
