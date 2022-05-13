@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jcarlos.backendjavajson;
+package ejercicioBackend;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import java.util.ArrayList;
@@ -16,11 +16,10 @@ public class Programa {
 
     public static void main(String[] args) throws JsonProcessingException {
         
-        String url1 = "http://www.etnassoft.com/api/v1/get/?any_tags=[html,css,javascript]&order=newest";
-        String url2 = "http://www.etnassoft.com/api/v1/get/?id=589";
+        String url1 = "https://jsonplaceholder.typicode.com/users";
+       
         mostrarLibros(url1);
-        System.out.println("-------------------");
-        mostrarLibros(url2);
+        
     }
     
 
@@ -31,8 +30,8 @@ public class Programa {
 
         try {
             respuesta = conexion.peticionHttpGet(url);
-            ArrayList<Libro> lista = mapeador.stringToList(respuesta);
-            lista.forEach(l -> System.out.println(l.getiD() + " " + l.getTitle()));
+            ArrayList<Usuario> lista = mapeador.stringToList(respuesta);
+            lista.forEach(l -> System.out.println(l.toString()));
         } catch (Exception e) {
             // Manejar excepción
             System.out.println("Error durante la conexión HTTP");
