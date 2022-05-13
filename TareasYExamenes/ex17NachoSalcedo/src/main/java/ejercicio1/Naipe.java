@@ -11,20 +11,19 @@ import java.util.Random;
  * @author nacho
  */
 public class Naipe {
-    
+
     private String valor;
-    private String palo;
-    
-    private String[]palos={"rombos","treboles", "picas", "corazones"};
-    private String[]valores= {"2","3","4","5","6","7","8","9","10","J","Q","k","AS"};
+    private Palos palo;
+
+    private String[] valores = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "k", "AS"};
     private Random aleatorio = new Random();
 
     public Naipe() {
-        
-        this.palo = palos[aleatorio.nextInt(palos.length)];
-        this.valor = valores[aleatorio.nextInt(valores.length)];
-        
-        
+
+        this.palo = palo;
+
+        this.valor = valor;
+
     }
 
     public String getValor() {
@@ -35,39 +34,46 @@ public class Naipe {
         this.valor = valor;
     }
 
-    public String getPalo() {
+    public Palos getPalo() {
         return palo;
     }
 
-    public void setPalo(String palo) {
+    public void setPalo(Palos palo) {
         this.palo = palo;
-    }
-
-    public String[] getPalos() {
-        return palos;
-    }
-
-    public void setPalos(String[] palos) {
-        this.palos = palos;
-    }
-
-    public String[] getValores() {
-        return valores;
-    }
-
-    public void setValores(String[] valores) {
-        this.valores = valores;
     }
 
     @Override
     public String toString() {
-        return  valor + " de " + palo ;
+        return "Naipe{" + "valor=" + valor + ", palo=" + palo + '}';
     }
 
-   
-    
-    
-    
-    
-    
+    public Naipe generarCartaAleatoria() {
+        int opcionPalo = aleatorio.nextInt(4) + 1;
+
+        Naipe naipe = new Naipe();
+
+        switch (opcionPalo) {
+
+            case 1:
+                naipe.setPalo(Palos.Corazones);
+                naipe.setValor(aleatorio.nextInt(valores.length));
+                break;
+            case 2:
+                naipe.setPalo(Palos.Diamantes);
+                naipe.setValor(aleatorio.nextInt(valores.length));
+                break;
+            case 3:
+                naipe.setPalo(Palos.Picas);
+                naipe.setValor(aleatorio.nextInt(valores.length));
+            case 4:
+                naipe.setPalo(Palos.Treboles);
+                naipe.setValor(aleatorio.nextInt(valores.length);
+                break;
+
+        }
+
+        return naipe;
+
+    }
+
 }

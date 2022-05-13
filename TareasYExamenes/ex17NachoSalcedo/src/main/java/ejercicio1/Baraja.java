@@ -17,6 +17,7 @@ public class Baraja {
     public Baraja() {
         this.baraja =  new ArrayList<Naipe>();
         for (int i = 0; i < 52; i++) {
+            
             baraja.add(new Naipe());
         }
         
