@@ -17,19 +17,18 @@ public class Prueba {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        List<Naipe> barajaPoker = new ArrayList();
-        
-         for (int i = 0; i < 52; i++) {
-            barajaPoker.add(new Naipe());
-        }
-        
-        for (Naipe naipe : barajaPoker) {
-            System.out.println(naipe);   
-        }
-        
-        
-        
+
+//        List<Naipe> barajaPoker = new ArrayList();
+//        
+//         for (int i = 0; i < 52; i++) {
+//            barajaPoker.add(new Naipe());
+//        }
+//        
+//        for (Naipe naipe : barajaPoker) {
+//            System.out.println(naipe); 
+        Baraja espa = new Baraja();
+
+        System.out.println(espa.getBaraja());
     }
-    
+
 }

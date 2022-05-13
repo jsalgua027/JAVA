@@ -61,7 +61,7 @@ public class Naipe {
 
     @Override
     public String toString() {
-        return "Naipe{" + "valor=" + valor + ", palo=" + palo + '}';
+        return  valor + " de " + palo ;
     }
 
    
