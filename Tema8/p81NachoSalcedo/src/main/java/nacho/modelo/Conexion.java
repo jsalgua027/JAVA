@@ -1,7 +1,6 @@
 /*
  * Esta clase aplica el patrón SINGLETON
  */
-
 package nacho.modelo;
 
 import java.sql.Connection;
@@ -10,18 +9,18 @@ import java.sql.SQLException;
 
 /**
  *
- * @author J. Carlos F. Vico <jcarlosvico@maralboran.es>
+ * 192.168.56.101:3306--->> direccion IP en clase; ojo con el usuario que es
+ * nacho
  */
-
 public class Conexion {
 
-    private static final String SERVIDOR = "jdbc:mysql://192.168.56.101:3306/";
+    private static final String SERVIDOR = "jdbc:mysql://localhost/";
     private static final String NOMBRE_BASE_DATOS = "baseDatosP81";
-    private static final String USER = "nacho";
+    private static final String USER = "root";
     private static final String PASS = "71206692";
 
     private static Connection instancia = null;
-    
+
     // Constructor privado no accesible desde otras clases
     private Conexion() {
 
@@ -34,7 +33,7 @@ public class Conexion {
             try {
 
                 // Se crea el objeto Connection	
-                instancia = DriverManager.getConnection(SERVIDOR + NOMBRE_BASE_DATOS, USER, PASS);
+                instancia = DriverManager.getConnection(SERVIDOR + NOMBRE_BASE_DATOS + "?serverTimezone=UTC", USER, PASS);
 
                 System.out.println("Conexión realizada con éxito.");
 

@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class Conexion {
         //NACHO CONEXION A BASE DE DATOS primeraconexion
     private static final String SERVIDOR = "jdbc:mysql://localhost/";
-    private static final String NOMBRE_BASE_DATOS = "primeraconexion";
+    private static final String NOMBRE_BASE_DATOS = "primera";
     private static final String USER = "root";
     private static final String PASS = "71206692";
 
