@@ -18,7 +18,7 @@ public interface IPersona {
     List<AlumnoVO> getAll() throws SQLException;
     
     // Méodo para obtener un registro a partir de la PK
-    AlumnoVO findByPk(int pk) throws SQLException;
+    AlumnoVO findByPk(int numexped) throws SQLException;
     
     // Método para insertar un registro
     int insertPersona (AlumnoVO persona) throws SQLException;

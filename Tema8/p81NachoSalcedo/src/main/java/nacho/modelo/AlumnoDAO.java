@@ -88,7 +88,7 @@ public class AlumnoDAO implements IPersona {
     public int insertPersona(AlumnoVO alumno) throws SQLException {
 
         int numFilas = 0;
-        String sql = "insert into alumnos values (?,?,?)";
+        String sql = "insert into alumnos values (?,?,?,?)";
 
         if (findByPk(alumno.getNumexped()) != null) {
             // Existe un registro con esa pk
