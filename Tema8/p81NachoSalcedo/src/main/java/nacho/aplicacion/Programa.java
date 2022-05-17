@@ -32,7 +32,11 @@ public class Programa {
         
         try {
             System.out.println("Nº personas insertadas " + daoAlumno.insertPersona(listaAlumnos));
-            
+             System.out.println("-----------------------------------------");
+            System.out.println("Comprobamos en una nueva lista que se recogen los datos desde la tabla.");
+            List<AlumnoVO> nuevaLista = daoAlumno.getAll();
+            System.out.println("-------- Lista con datos recogidos desde la B.D -------------");
+            nuevaLista.forEach(System.out::println);
         } catch (SQLException sqle) {
             System.out.println("No se ha podido realizar la operación:");
             System.out.println(sqle.getMessage());
