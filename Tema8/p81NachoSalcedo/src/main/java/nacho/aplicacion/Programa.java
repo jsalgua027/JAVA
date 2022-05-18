@@ -31,17 +31,17 @@ public class Programa {
         listaAlumnos.add(new AlumnoVO(005, "enrique", "sanchez", "calle sanchez"));
         
         try {
-            System.out.println("Nº personas insertadas " + daoAlumno.insertPersona(listaAlumnos));
+            System.out.println("Nº personas insertadas " + daoAlumno.insertPersona(listaAlumnos));//INSERTO ALUMNOS A TRAVES DE UNA LISTA
              System.out.println("-----------------------------------------");
             System.out.println("Comprobamos en una nueva lista que se recogen los datos desde la tabla.");
             List<AlumnoVO> nuevaLista = daoAlumno.getAll();
             System.out.println("-------- Lista con datos recogidos desde la B.D -------------");
             nuevaLista.forEach(System.out::println);
             System.out.println("-----------------------------------------");
-            System.out.println("Persona con primary key 1: ");
+            System.out.println("Persona con primary key 1: "); // LOCALIZO POR CLAVE PRIMARIA
             System.out.println(daoAlumno.findByPk(1));
             System.out.println("-----------------------------------------");
-            System.out.println("Se va a borrar la persona con pk 3");
+            System.out.println("Se va a borrar la persona con pk 3");//BORRO UN ALUMNO
             System.out.println("Nº personas borradas " + 
                     daoAlumno.deletePersona(new AlumnoVO(003,"antonio", "jull", "calle jull")));
              System.out.println("-----------------------------------------");
@@ -49,9 +49,9 @@ public class Programa {
             System.out.println("-------- Lista con datos recogidos desde la B.D despues de borrar una persona -------------");
             nuevaLista.forEach(System.out::println);
             System.out.println("-----------------------------------------");
-            System.out.println("Modificación de la persona con pk 5");
+            System.out.println("Modificación de la persona con pk 5");// MODIFICO PERSONA INDICADO CUAL QUIERO MODIFICAR
             System.out.println("Nº Personas modificadas " + 
-                    daoAlumno.updatePersona(5, new AlumnoVO(5, "enrique", "sanchez", "calle sanchez")));
+                    daoAlumno.updatePersona(5, new AlumnoVO(5, "LOCO", "PEREZ", "calle PEREZ")));
             System.out.println("-----------------------------------------");
             nuevaLista = daoAlumno.getAll();
             System.out.println("-------- Lista con datos recogidos desde la B.D despues de modificar una persona -------------");
@@ -63,10 +63,10 @@ public class Programa {
 //            System.out.println("Nombres cambiados " + daoAlumno.cambiarNombres("JJ", "jose juan"));
 //            System.out.println("-----------------------------------------");
 //            nuevaLista = daoAlumno.getAll();
-            System.out.println("-------- Lista con datos recogidos desde la B.D despues de ejecutar proced. -------------");
-            nuevaLista.forEach(System.out::println);
-            System.out.println("-----------------------------------------");
-        } catch (SQLException sqle) {
+//            System.out.println("-------- Lista con datos recogidos desde la B.D despues de ejecutar proced. -------------");
+//            nuevaLista.forEach(System.out::println);
+//            System.out.println("-----------------------------------------");
+          } catch (SQLException sqle) {
             System.out.println("No se ha podido realizar la operación:");
             System.out.println(sqle.getMessage());
            
