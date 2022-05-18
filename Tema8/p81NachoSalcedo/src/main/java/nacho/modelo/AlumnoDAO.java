@@ -58,7 +58,7 @@ public class AlumnoDAO implements IPersona {
         ResultSet res = null;
         AlumnoVO alumno = new AlumnoVO();
 
-        String sql = "select * from alumnos where pk= numexped";
+        String sql = "select * from alumnos where numexped= ?";
 
         try ( PreparedStatement prest = con.prepareStatement(sql)) {
             // Preparamos la sentencia parametrizada
@@ -100,10 +100,10 @@ public class AlumnoDAO implements IPersona {
             try ( PreparedStatement prest = con.prepareStatement(sql)) {
 
                 // Establecemos los parámetros de la sentencia
-                prest.setInt(0, alumno.getNumexped());
-                prest.setString(1, alumno.getNomalum());
-                prest.setString(2, alumno.getApe1alum());
-                prest.setString(3, alumno.getDireccion());
+                prest.setInt(1, alumno.getNumexped());
+                prest.setString(2, alumno.getNomalum());
+                prest.setString(3, alumno.getApe1alum());
+                prest.setString(4, alumno.getDireccion());
 
                 numFilas = prest.executeUpdate();
             }
@@ -146,7 +146,7 @@ public class AlumnoDAO implements IPersona {
     public int deletePersona(AlumnoVO alumno) throws SQLException {
         int numFilas = 0;
 
-        String sql = "delete from alumnos where pk = numexped";
+        String sql = "delete from alumnos where numexped = ?";
 
         // Sentencia parametrizada
         try ( PreparedStatement prest = con.prepareStatement(sql)) {
@@ -163,7 +163,7 @@ public class AlumnoDAO implements IPersona {
     public int updatePersona(int pk, AlumnoVO nuevosDatos) throws SQLException {
 
         int numFilas = 0;
-        String sql = "update alumnos set numexped = ?, nomalum = ?, ape1alum = ?, direccion = ? where pk= numexped";
+        String sql = "update alumnos set numexped = ?, nomalum = ?, ape1alum = ?, direccion = ? where numexped = ?";
 
         if (findByPk(pk) == null) {
             // La persona a actualizar no existe
@@ -174,10 +174,11 @@ public class AlumnoDAO implements IPersona {
             try ( PreparedStatement prest = con.prepareStatement(sql)) {
 
                 // Establecemos los parámetros de la sentencia
-                prest.setInt(0, nuevosDatos.getNumexped());
-                prest.setString(1, nuevosDatos.getNomalum());
-                prest.setString(2, nuevosDatos.getApe1alum());
-                prest.setString(3, nuevosDatos.getDireccion());
+                prest.setInt(1, nuevosDatos.getNumexped());
+                prest.setString(2, nuevosDatos.getNomalum());
+                prest.setString(3, nuevosDatos.getApe1alum());
+                prest.setString(4, nuevosDatos.getDireccion());
+                prest.setInt(5, pk);
 
                 numFilas = prest.executeUpdate();
             }

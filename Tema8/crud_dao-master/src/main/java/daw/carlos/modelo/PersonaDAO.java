@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  *
- * @author J. Carlos F. Vico <jcarlosvico@maralboran.es>
+ * 
  */
 public class PersonaDAO implements IPersona {
 
