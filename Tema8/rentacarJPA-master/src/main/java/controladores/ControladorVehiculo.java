@@ -7,6 +7,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import org.hibernate.NonUniqueResultException;
+
 import entidades.Vehiculo;
 
 public class ControladorVehiculo {
@@ -51,17 +53,26 @@ public class ControladorVehiculo {
 	}
 
 	public void createVehiculo(Vehiculo v) {
-		this.em = entityManagerFactory.createEntityManager();
-		// En este caso es necesario iniciar una transacción en la base de datos
-		// porque vamos a persistir información en la misma
-		this.em.getTransaction().begin();
-		// Se guarda el objeto en el contexto de persistencia (caché intermedia)
-		// v es una entidad conectada
-		this.em.persist(v);
-		// Se vuelca la información del contexto (caché intermedia) en la base de datos
-		this.em.getTransaction().commit();
-		// Cierra el entityManager
-		this.em.close();
+		
+		
+			this.em = entityManagerFactory.createEntityManager();
+			// En este caso es necesario iniciar una transacción en la base de datos
+			// porque vamos a persistir información en la misma
+			this.em.getTransaction().begin();
+			// Se guarda el objeto en el contexto de persistencia (caché intermedia)
+			// v es una entidad conectada
+			this.em.persist(v);
+			// Se vuelca la información del contexto (caché intermedia) en la base de datos
+			this.em.getTransaction().commit();
+			// Cierra el entityManager
+			this.em.close();
+			
+		
+		
+		
+		
+		
+		
 	}
 
 	public Vehiculo findByPK(int pk) {
