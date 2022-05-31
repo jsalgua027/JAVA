@@ -35,15 +35,15 @@ public class Programa {
         return aux;
         
         
-        public static void ordenarPorNombre(ArrayList<Crucero>aux){
-            
-            Comparator <Crucero> comparador = 
-                    Comparator.comparing()
-
-            aux.stream()
-                    .sorted(c1, c2) -> Double.compare(c1. 0)
-            
-        } 
+//        public static void ordenarPorNombre(ArrayList<Crucero>aux){
+//            
+//            Comparator <Crucero> comparador = 
+//                    Comparator.comparing()
+//
+//            aux.stream()
+//                    .sorted(c1, c2) -> Double.compare(c1. 0)
+//            
+//        } 
         
         
         
