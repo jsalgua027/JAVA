@@ -41,7 +41,7 @@ public class LecturaCSV {
                 m1.setPorcentaje2015(Double.parseDouble(tokens[3].replaceAll(",", ".")));
                 m1.setPorcentaje2014(Double.parseDouble(tokens[4].replaceAll(",", "."))); 
                 m1.setPorcentaje2013(Double.parseDouble(tokens[5].replaceAll(",", ".")));
-                m1.setPorcentaje2012(Double.parseDouble(tokens[6].replaceAll(",", ".")));
+               
                 m1.setPorcentaje2011(Double.parseDouble(tokens[7].replaceAll(",", ".")));
                 m1.setPorcentaje2010(Double.parseDouble(tokens[8].replaceAll(",", ".")));
                 m1.setPorcentaje2006(Double.parseDouble(tokens[9].replaceAll(",", ".")));

@@ -16,7 +16,7 @@ public class Municipio {
     private double porcentaje2015;
     private double porcentaje2014;
     private double porcentaje2013;
-    private double porcentaje2012;
+   
     private double porcentaje2011;
     private double porcentaje2010;
     private double porcentaje2006;
@@ -77,13 +77,7 @@ public class Municipio {
         this.porcentaje2013 = porcentaje2013;
     }
 
-    public double getPorcentaje2012() {
-        return porcentaje2012;
-    }
-
-    public void setPorcentaje2012(double porcentaje2012) {
-        this.porcentaje2012 = porcentaje2012;
-    }
+  
 
     public double getPorcentaje2011() {
         return porcentaje2011;
@@ -127,7 +121,7 @@ public class Municipio {
 
     @Override
     public String toString() {
-        return "Municipio{" + "codigoM=" + codigoM + ", nombre=" + nombre + ", porcentaje2016=" + porcentaje2016 + ", porcentaje2015=" + porcentaje2015 + ", porcentaje2014=" + porcentaje2014 + ", porcentaje2013=" + porcentaje2013 + ", porcentaje2012=" + porcentaje2012 + ", porcentaje2011=" + porcentaje2011 + ", porcentaje2010=" + porcentaje2010 + ", porcentaje2006=" + porcentaje2006 + ", porcentaje2001=" + porcentaje2001 + ", porcentaje1996=" + porcentaje1996 + '}';
+        return "Municipio{" + "codigoM=" + codigoM + ", nombre=" + nombre + ", porcentaje2016=" + porcentaje2016 + ", porcentaje2015=" + porcentaje2015 + ", porcentaje2014=" + porcentaje2014 + ", porcentaje2013=" + porcentaje2013 +  ", porcentaje2011=" + porcentaje2011 + ", porcentaje2010=" + porcentaje2010 + ", porcentaje2006=" + porcentaje2006 + ", porcentaje2001=" + porcentaje2001 + ", porcentaje1996=" + porcentaje1996 + '}';
     }
     
     
