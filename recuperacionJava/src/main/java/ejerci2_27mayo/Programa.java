@@ -72,8 +72,8 @@ public class Programa {
                 listaMaxUnMuniCopia.addAll(listaMaxUnMuni);
                 //ordeno de menos a mayor
                 listaMaxUnMuniCopia.sort((c1,c2)->Double.compare(c1, c2));
-                if (listaMaxUnMuniCopia.get(listaMaxUnMuniCopia.size())> porcentajeMax){
-                    porcentajeMax= listaMaxUnMuniCopia.get(listaMaxUnMuniCopia.size());
+                if (listaMaxUnMuniCopia.get(listaMaxUnMuniCopia.size()-1)> porcentajeMax){
+                    porcentajeMax= listaMaxUnMuniCopia.get(listaMaxUnMuniCopia.size()-1);
                     nombreMuniciPorceMax= muni.getNombre();
                     int indice =0;
                     indice = listaMaxUnMuni.indexOf(porcentajeMax);
