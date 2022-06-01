@@ -5,6 +5,7 @@
 package ejerci1_exa27mayo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -20,47 +21,44 @@ public class Programa {
     /**
      * @param args the command line arguments
      */
-    
-    public  static Map<String, ArrayList<String>> ordenarLista(ArrayList<Crucero> cruceros){
-        Map<String, ArrayList<String>> aux =  new TreeMap<>();
-        
+    public static Map<String, ArrayList<String>> ordenarLista(ArrayList<Crucero> cruceros) {
+        Map<String, ArrayList<String>> aux = new TreeMap<>();
+
         for (Crucero crucero : LecturaJSO.leerArchivoJSON("cruceros.json")) {
             crucero.getNombre();
             crucero.getDestinos();
             aux.put(crucero.getNombre(), crucero.getDestinos());
-            
+
+        }
+
+        return aux;
+
+    }
+
+    //MÉTODO QUE ORDENA POR PRECIO Y POR NOMBRE
+    public static void ordenarPrecioNombre(ArrayList<Crucero> lista) {
+
+        Comparator<Crucero> comparador = Comparator.comparing(Crucero::getPrecio).thenComparing(Comparator.comparing(Crucero::getNombre));
+        Collections.sort(lista, comparador);
+
+    }
+
+    public static void main(String[] args) {
+
+        ArrayList<Crucero> listaP = new ArrayList<>();
+        listaP = LecturaJSO.leerArchivoJSON("cruceros.json");
+        //imprimo la lista
+        for (Crucero crucero : listaP) {
+            System.out.println(crucero.toString()+"\n");
         }
         
-        
-        return aux;
-        
-        
-//        public static void ordenarPorNombre(ArrayList<Crucero>aux){
-//            
-//            Comparator <Crucero> comparador = 
-//                    Comparator.comparing()
-//
-//            aux.stream()
-//                    .sorted(c1, c2) -> Double.compare(c1. 0)
-//            
-//        } 
-        
-        
-        
-    }
-    
-    
-    
-    public static void main(String[] args) {
-        
-        
-         ArrayList<Crucero> listaP = new ArrayList<>();
-        listaP = LecturaJSO.leerArchivoJSON("cruceros.json");
-        
-        System.out.println(listaP.toString());
-        
+       // imprimo la lista ordenada
+
+        for (Crucero crucero : listaP) {
+            System.out.println(ordenarLista(listaP));
+        }
        
-        System.out.println( ordenarLista(listaP));
+      
     }
-    
+
 }
