@@ -112,7 +112,7 @@ public class Programa {
                 } 
         }
         
-         System.out.println(nombreMuniciPorceMax+porcentajeMax);
+         System.out.println(nombreMuniciPorceMax+";"+porcentajeMax+";"+anio);
     }
     
     public static void generarficheros(ArrayList<Municipio> aux) {

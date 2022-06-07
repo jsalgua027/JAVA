@@ -5,6 +5,7 @@
 package ejerci1_exa27mayo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -24,9 +25,8 @@ public class Programa {
     public static Map<String, ArrayList<String>> ordenarLista(ArrayList<Crucero> cruceros) {
         Map<String, ArrayList<String>> aux = new TreeMap<>();
 
-        for (Crucero crucero : LecturaJSO.leerArchivoJSON("cruceros.json")) {
-            crucero.getNombre();
-            crucero.getDestinos();
+        for (Crucero crucero :cruceros) {
+            
             aux.put(crucero.getNombre(), crucero.getDestinos());
 
         }
@@ -46,6 +46,7 @@ public class Programa {
     public static void main(String[] args) {
 
         ArrayList<Crucero> listaP = new ArrayList<>();
+        Map<String,ArrayList<String>> auxmap = new TreeMap<>();
         listaP = LecturaJSO.leerArchivoJSON("cruceros.json");
         //imprimo la lista
         for (Crucero crucero : listaP) {
@@ -53,12 +54,25 @@ public class Programa {
         }
         
        // imprimo la lista ordenada
-
+         ordenarPrecioNombre(listaP);
+         
         for (Crucero crucero : listaP) {
-            System.out.println(ordenarLista(listaP));
+            System.out.println(crucero);
         }
        
-      
+        System.out.println("-----------------------LISTA MAP--------------------");
+        
+       auxmap= ordenarLista(listaP);
+            
+       auxmap.forEach((k,v) -> System.out.println(k +"->" + v));
+       
+        for (Map.Entry<String, ArrayList<String>> entry : auxmap.entrySet()) {
+            Object key = entry.getKey();
+            Object val = entry.getValue();
+            
+        }
+        
+        
     }
 
 }
