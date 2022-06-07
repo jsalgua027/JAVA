@@ -164,6 +164,10 @@ public class Programa {
         
         
         crearDirectorio("Municipios");
+        System.out.println("----------------------GENERO SUBDIRECTORIO SOLO CON MUNICIPIOS QUE COMIENCEN POR LA LETRA B----");
+        if(listaMunicipios.contains(Municipio)){
+            
+        }
         crearDirectorio("Municipios/Municipios2");
     }
     
