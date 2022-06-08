@@ -43,6 +43,22 @@ public class Programa {
         }
 
     }
+     
+     public static void subcarpetas(ArrayList<Municipio>aux){
+         int contador =0;
+        String contadorString = "";
+        String ruta = "";
+         for (Municipio municipio : aux) {
+             if(municipio.getNombre().contains("B")){
+                   contador++;
+                 contadorString=String.valueOf(contador);
+              ruta= "Municipios/"+contadorString;
+                 crearDirectorio(ruta);
+             }System.out.println("no contiene la B");
+            
+         }
+         
+     }
     
     
     
@@ -164,11 +180,21 @@ public class Programa {
         
         
         crearDirectorio("Municipios");
+      
         System.out.println("----------------------GENERO SUBDIRECTORIO SOLO CON MUNICIPIOS QUE COMIENCEN POR LA LETRA B----");
-        if(listaMunicipios.contains(Municipio)){
-            
-        }
-        crearDirectorio("Municipios/Municipios2");
+//        int contador =0;
+//        String contadorString = "";
+//        String ruta = "";
+//         for (Municipio listaMunicipio : listaMunicipios) {
+//             if (listaMunicipio.getNombre().contains("B")){
+//                 contador++;
+//                 contadorString=String.valueOf(contador);
+//              ruta= "Municipios/"+contadorString;
+//                 crearDirectorio(ruta);
+//             }System.out.println("No contiene la letra B");
+//            
+//        }
+        subcarpetas(listaMunicipios);
     }
     
     
