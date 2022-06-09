@@ -24,24 +24,16 @@ public class Utilidades {
     }
     
     
-    public static int  contarfilas (String [][] aux){
-        int contador=0;
-        for (int i = 0; i < aux.length; i++) {
-            contador++;
-            
+    public static boolean esIsla (int j, int i, String  [][] aux){
+        
+        for (int k = (i-1); k < (i-1); k++) {
+            for (int l = (j-1); l < j-1; l++) {
+                
+            }
         }
-        return contador;
         
     }
-    
-    public static int  contarColumnas (String [][] aux){
-        int contador=0;
-        for (int i = 0; i < aux[i].length; i++) {
-            contador++;
-            
-        }
-        return contador;
         
     }
 
-}
+
